@@ -171,13 +171,15 @@ elif [ $# -eq 2 ]; then
       # get the file name without the extension
       file_name=$(basename "$2" .c)
       # compile the program
-      gcc -o "$file_name" "$2"
+      gcc -g -Wall -Wextra -Werror -o "$file_name" "$2"
       # check if the compilation was successful
       # shellcheck disable=SC2181
       if [ $? -eq 0 ]; then
+        echo "Compilation successful"
+        echo ""
         # check if $1 is equal to -c or --compile
         if [ "$1" = "-c" ] || [ "$1" = "--compile" ]; then
-          echo "Compilation successful"
+          ls -alF "$file_name"
         # check if $1 is equal to -e or --exec
         elif [ "$1" = "-e" ] || [ "$1" = "--exec" ]; then
           # run the program
