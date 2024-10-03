@@ -170,8 +170,12 @@ elif [ $# -eq 2 ]; then
 
       # get the file name without the extension
       file_name=$(basename "$2" .c)
-      # compile the program
-      gcc -g -Wall -Wextra -Werror -o "$file_name" "$2"
+      # compile the program with or without OpenMP support
+      if grep -q -e "#include <omp.h>" -e "#pragma omp" "$2"; then
+        gcc -g -Wall -Wextra -Werror -fopenmp -o "$file_name" "$2"
+      else
+        gcc -g -Wall -Wextra -Werror -o "$file_name" "$2"
+      fi
       # check if the compilation was successful
       # shellcheck disable=SC2181
       if [ $? -eq 0 ]; then
