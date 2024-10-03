@@ -17,18 +17,18 @@ jobs:
 
       - name: Compile test.c
         run: |
-          ./Compiler.bash -c Test/test.c
+          ./Compiler.bash -c ./C-test/test.c
           ./test
 
       - name: Compile test_openMP.c
         run: |
-          ./Compiler.bash -c Test/test_openMP.c
+          ./Compiler.bash -c ./C-test/test_openMP.c
           ./test_openMP
 
       - name: Compile and run test.c
         run: |
-          ./Compiler.bash -e Test/test.c
+          ./Compiler.bash -e ./C-test/test.c
 
       - name: Compile and run test_openMP.c
         run: |
-          ./Compiler.bash -e Test/test_openMP.c
+          ./Compiler.bash -e ./C-test/test_openMP.c
