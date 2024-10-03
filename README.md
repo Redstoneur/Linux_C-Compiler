@@ -1,10 +1,27 @@
 # Linux C-Compiler
 
+---
+
 ![License](https://img.shields.io/github/license/Redstoneur/Linux_C-Compiler)
 ![Top Language](https://img.shields.io/github/languages/top/Redstoneur/Linux_C-Compiler)
+![Size](https://img.shields.io/github/repo-size/Redstoneur/Linux_C-Compiler)
+![Contributors](https://img.shields.io/github/contributors/Redstoneur/Linux_C-Compiler)
+![Last Commit](https://img.shields.io/github/last-commit/Redstoneur/Linux_C-Compiler)
+![Issues](https://img.shields.io/github/issues/Redstoneur/Linux_C-Compiler)
+![Pull Requests](https://img.shields.io/github/issues-pr/Redstoneur/Linux_C-Compiler)
+
+---
+
+![Forks](https://img.shields.io/github/forks/Redstoneur/Linux_C-Compiler)
+![Stars](https://img.shields.io/github/stars/Redstoneur/Linux_C-Compiler)
+![Watchers](https://img.shields.io/github/watchers/Redstoneur/Linux_C-Compiler)
+
+---
+
 ![Latest Release](https://img.shields.io/github/v/release/Redstoneur/Linux_C-Compiler)
 ![Release Date](https://img.shields.io/github/release-date/Redstoneur/Linux_C-Compiler)
-![Last Commit](https://img.shields.io/github/last-commit/Redstoneur/Linux_C-Compiler)
+
+---
 
 This project provides a bash script for compiling and running C programs on Linux.
 
