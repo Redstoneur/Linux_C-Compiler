@@ -3,7 +3,7 @@
 # This script allows to compile a C program.
 # It compiles the program into an executable and runs it.
 
-version="v1.0.0"
+version="v1.1.0"
 
 # if there are no arguments, display a help message
 if [ $# -eq 0 ]; then
