@@ -15,6 +15,8 @@ This project provides a bash script for compiling and running C programs on Linu
 - Display help information
 - Display version information
 - Install gcc compiler if not already installed
+- Support for OpenMP
+- Additional test files
 
 ## Usage
 
