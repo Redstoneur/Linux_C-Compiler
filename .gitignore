@@ -53,3 +53,7 @@ dkms.conf
 
 # JetBrains
 .idea/
+
+# executables
+test
+test_openMP
