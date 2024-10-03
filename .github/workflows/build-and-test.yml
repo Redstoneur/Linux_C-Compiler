@@ -1,0 +1,34 @@
+name: C Program CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install GCC
+        run: |
+          chmod +x Compiler.bash
+          ./Compiler.bash -i
+
+      - name: Compile test.c
+        run: |
+          ./Compiler.bash -c Test/test.c
+          ./test
+
+      - name: Compile test_openMP.c
+        run: |
+          ./Compiler.bash -c Test/test_openMP.c
+          ./test_openMP
+
+      - name: Compile and run test.c
+        run: |
+          ./Compiler.bash -e Test/test.c
+
+      - name: Compile and run test_openMP.c
+        run: |
+          ./Compiler.bash -e Test/test_openMP.c
